@@ -169,13 +169,16 @@
                 <h2 class="w3-wide"><i class="fa fa-user-circle fa-3x w3-margin-right"></i>Login</h2>
             </header>
             <div class="w3-container">
-                <p><label><i class="fa fa-user"></i> Username</label></p>
-                <input class="w3-input w3-border" type="text" placeholder="Enter email">
-                <p><label><i class="fa fa-lock"></i> Password</label></p>
-                <input class="w3-input w3-border" type="password" placeholder="Enter password">
-                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">LOGIN <i class="fa fa-check"></i></button>
-                <button class="w3-button w3-red w3-section" onclick="document.getElementById('loginModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-                <p class="w3-right"><a href="#" class="w3-text-blue">forgot password?</a></p>
+                <form method="post" action="/loginUser">
+                    <p><label><i class="fa fa-user"></i> Username</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter email" name="uname">
+                    <p><label><i class="fa fa-lock"></i> Password</label></p>
+                    <input class="w3-input w3-border" type="password" placeholder="Enter password" name="password">
+                    <button type="submit" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">LOGIN <i class="fa fa-check"></i></button>
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('loginModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <p class="w3-right"><a href="#" class="w3-text-blue">forgot password?</a></p>
+                </form>
+
             </div>
         </div>
     </div>
